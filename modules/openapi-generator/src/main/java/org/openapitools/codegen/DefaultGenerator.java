@@ -468,7 +468,7 @@ public class DefaultGenerator extends AbstractGenerator implements Generator {
 
                 if (ModelUtils.isFreeFormObject(schema)) { // check to see if it'a a free-form object
                     LOGGER.info("Model {} not generated since it's a free-form object", name);
-                    continue;
+                    //continue;
                 } else if (ModelUtils.isMapSchema(schema)) { // check to see if it's a "map" model
                     // A composed schema (allOf, oneOf, anyOf) is considered a Map schema if the additionalproperties attribute is set
                     // for that composed schema. However, in the case of a composed schema, the properties are defined or referenced
